@@ -22,7 +22,7 @@ h2{
    top: 250px;
    right:56px;
 }
-   .LoginFrm{
+   #LoginFrm{
       margin: 0px;
       padding: 0px;
       position: absolute;
@@ -68,21 +68,103 @@ input[type=text]:focus {
    top: 50px;
    right:400px;
 }
-.avatar {
+
+.profile {
    vertical-align: center;
-   margin: 80px;
-   width: auto;
-   height: auto;
-   border-radius: 50%;
+   font-family: sans-serif;
+   text-align: center;
+   max-width: 200px;
+   padding: 60px;
+   
+   
+   
  }
- .avatar {
-   padding: 50px;
-   transition: transform .2s; /* Animation */
-   width: 200px;
-   height: 200px;
-   margin: 0 auto;
+ .profile_avatar {
+   width: 150px;
+   height: 150px;
+   object-fit:cover;
+   transition: transform.2s; /* Animation */
+   border-radius: 50%;
+   margin: 100px auto 20px auto;
  }
  
- .avatar:hover {
-   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ .profile_avatar:hover {
+   transform: scale(1.5); /* (100% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
  }
+ .profile_name{
+    font-size: 1.2em;
+    font-weight: bold;   
+ }
+
+ .wrapper{
+   position: relative;
+   margin-top: 100px;
+   margin-left: 200px;
+   padding-bottom: 56.25%;
+   padding-top: 25px;
+   height: 0px;
+   
+}
+.wrapper iframe{
+   position: absolute;
+   left:0px;
+   height:300px;
+   width: 500px;
+}
+.clicks{
+   position: relative;
+   margin: 10px;
+   margin-left: 150px;
+   display: flex;
+}
+/* Esports-Netherlands-focused-only-tiles*/
+
+.esports-netherlands-tiles{
+   position: relative;
+   border: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffffff;
+   flex-direction:row;
+}
+ .esports-netherlands-tiles .Esports{
+   position: relative;
+   width: 250px;
+   height: 250px;
+   margin: 200px 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   box-shadow: 5px 10px #888888;
+   align-items: center;
+}
+.Esports-netherlands-tiles{
+   position: relative;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffffff;
+   flex-direction:row;
+}
+
+.Esports-netherlands-tiles .Esports{
+   position: relative;
+   width: 250px;
+   height: 250px;
+   margin: 200px 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   box-shadow: 5px 10px #888888;
+   align-items: center;
+}
+
+   
+
+
+
+
+
+ 
